@@ -1,10 +1,28 @@
 # HaloPad status
 
-## HaloPad 0.3.12 on main: OpenCE 273
+## HaloPad 0.3.12: OpenCE 273
+
+**Published 2026-10-26:** [HaloPad 0.3.12](https://github.com/chrissotraidis/projectreach/releases/tag/v0.3.12)
+is the latest source/recipe release at `96a92cb`. Anonymous latest-release and
+asset readbacks verify exactly its PadMint recipe and `SHA256SUMS`, byte-identical
+to the audited files. Required pre-publication player checks passed for iOS and
+Mac from that clean source using current PadMint main `d5aab6d`, Apple Python
+3.9.6 and empty PadMint folders, taking about 262 seconds each. Both packages
+pass strict signatures, engine/network identity, all 35 component notices and
+all 49 runtime-source hashes. Their guest executable code matches the earlier
+validated build; only the diagnostic compilation timestamp differs.
+
+Required post-publication player checks also passed for **iOS and Mac** with
+the same PadMint main and Apple Python, fresh empty folders and no supplied
+checkout. Both automatically selected the published `v0.3.12` source; the builds
+took 231 and 232 seconds respectively. Both exported packages pass the same
+signature, notices, engine/network and runtime-source audits. Their guest code
+matches the pre-publication builds apart from the diagnostic timestamp. Release
+evidence is retained locally under `generated/release-0.3.12-validation/` and is
+not committed.
 
 The source update selects OpenCE build 273
 (`7fb941b0b205edb1f7ecbb0aa6c2d7f5b884732d`), network version 38.
-The published release remains 0.3.11 until a separate source/recipe release.
 Renderer and shader adaptations are reviewed against the exact source; camera,
 input and host imports are unchanged from 244. The new upstream Android texture
 cache and geometry streaming paths remain intact. Older reviewed adaptation
@@ -59,16 +77,16 @@ the original game maps, saves, backups and preferences. The updated app remains
 installed and stopped; private evidence is retained locally under
 `generated/opence-273-validation/` and is not committed.
 
-No public release, tag, IPA, network-policy publication or announcement is part
-of this source update. The existing exact-version policy defaults to 38 for this
-engine even when the published policy has no row for it. Broad campaign,
+Public delivery is source and recipe only, with no public IPA or game files.
+The live signed network policy already includes exact version 38; no policy
+change was needed for this release. Broad campaign,
 manual touch/controller, Wi-Fi/internet interoperability, the new game modes
 and sustained thermal/audio acceptance are not claimed.
 
 ## HaloPad 0.3.11: OpenCE 244
 
 **Published 2026-10-21:** [HaloPad 0.3.11](https://github.com/chrissotraidis/projectreach/releases/tag/v0.3.11)
-is the latest source/recipe release at `57fca3a`. Anonymous metadata and downloaded
+was released from `57fca3a`. Anonymous metadata and downloaded
 asset readbacks verify exactly its PadMint recipe and `SHA256SUMS`, byte-identical
 to the audited files. Required post-publication PadMint checks passed for iOS and
 Mac using Apple Python 3.9.6, empty PadMint folders, no supplied checkout and the
